@@ -1,0 +1,23 @@
+Nombre 
+Apellidos 
+Domicilio 
+Código postal 
+Provincia 
+Teléfono 
+Profesión 
+Sueldo mensual 
+Duración de su jornada laboral 
+Fecha de nacimiento 
+Peso 
+Altura 
+Sexo 
+Soltero/Casado/Viudo/Divorciado 
+Comentarios sobre sus aficiones 
+Qué deportes desea practicar entre (Futbol, Natación, Baloncesto, Atletismo, Karate) 
+
+Utiliza JQuery para validar los datos mediante reglas. Usa widgets JQuery en campos de fecha 
+Agrega estilos CSS a tu elección 
+Crea una estructura de carpetas ordenada: 
+	El código javascript en una carpeta llamada js 
+	Las hojas de estilo en una carpeta llamada css 
+	El código html en un fichero llamado ejercicio1.html 
