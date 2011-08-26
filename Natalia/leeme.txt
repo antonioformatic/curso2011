@@ -1,0 +1,10 @@
+Estamos creando un primer proyecto para guardar versiones con GIT.
+Ahora agregamos este proyecto enel control de vesiones.
+Ahora guardaremos una segunda versión.
+Ahora realizaremos otro cambio y guardamos una segunda versión.
+
+
+Probando otra vez.
+Esta vez sí haremos un tercer cambio para visualizarlo en historia.
+
+otro cambio. 4º.

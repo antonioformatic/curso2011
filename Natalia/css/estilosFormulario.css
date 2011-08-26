@@ -1,0 +1,23 @@
+#commentForm { 
+	width:550px; 
+	padding: 10px;
+}
+#commentForm label { width: 250px; }
+#commentForm label.error, #commentForm input.submit { margin-left: 253px; }
+#signupForm { 
+	width: 550px; 
+	padding: 10px;
+}
+#signupForm label.error {
+	margin-left: 10px;
+	width: auto;
+	display: inline;
+	padding: 5px;
+	 
+}
+#newsletter_topics label.error {
+	display: none;
+	margin-left: 103px;
+}
+ 
+
