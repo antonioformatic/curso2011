@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+<<<<<<< HEAD
+	<name>curso2011</name>
+=======
+<<<<<<< HEAD
+	<name>probiña</name>
+=======
+	<name>curso2011</name>
+>>>>>>> bae887b9905966d8a790aa0974feb293da4b7931
+>>>>>>> 3725e8284a3d9fd8b046bb6c66db19aab94c3971
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.aptana.ide.core.unifiedBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.aptana.projects.webnature</nature>
+	</natures>
+</projectDescription>
