@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Validacion</title>
+		<meta name="author" content="to" />
+		
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.validate.js" type="text/javascript"></script>
+		<script src="js/validation.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>Formulario</h1>
+	<form class="cmxform" id="commentForm" method="get" action="">
+		<p>
+			<label for="nombre">Nombre</label>
+			<input id="nombre" name="nombre" class="required" minlength="2" />
+		<p>
+		<p>
+			<label for="apellidos">Apellidos</label>
+			<input id="apellidos" name="apellidos" class="required" minlength="2" />
+		<p>
+		<p>
+			<label for="domicilio">Domicilio</label>
+			<input id="domicilio" name="domicilio" class="required" minlength="2" />
+		<p>
+			<label for="cp">C&oacute;digo postal</label>
+			<input id="cp" name="cp" class="required" minlength="2" />
+		</p>
+		<p>
+			<label for="provincia">Provincia</label>
+			<input id="provincia" name="provincia" class="required" minlength="2" />
+		</p>
+		<p>
+			<label for="tfn">Tel&eacute;fono</label>
+			<input id="tfn" name="tfn" class="required" minlength="2" />
+		</p>
+		<p>
+			<label for="prof">Profesi&oacute;n</label>
+			<input id="prof" name="prof" class="required" minlength="2" />
+		</p>
+		<p>
+			<label for="sueldo">Sueldo mensual</label>
+			<input id="sueldo" name="sueldo" class="required" minlength="2" />
+		</p>
+		<p>
+			<label for="jornada">Duraci&oacute;n de su jornada laboral</label>
+			<input id="jornada" name="jornada" class="required" minlength="2" />
+		</p>
+		<p>
+			<label for="nacimiento">Fecha de nacimiento</label>
+			<input id="nacimiento" name="nacimiento" class="required" minlength="2" />
+		</p>
+		<p>
+			<label for="peso">Peso</label>
+			<input id="peso" name="peso" class="required" minlength="2" />
+		</p>
+		<p>
+			<label for="altura">Altura</label>
+			<input id="altura" name="altura" class="required" minlength="2" />
+		</p>
+		<p>
+			<label for="sexo">Sexo</label>
+			<input type="Radio" name="sexo" value="Masculino" checked />Masculino
+			<input type="Radio" name="sexo" value="Femenino" checked />Femenino
+		</p>
+		<p>
+			<label for="eCivil">Estado civil</label>
+			<input type="Radio" name="eCivil" value="Soltero" checked />Soltero
+			<input type="Radio" name="eCivil" value="Casado" checked />Casado
+			<input type="Radio" name="eCivil" value="Viudo" checked />Viudo
+			<input type="Radio" name="eCivil" value="Divorciado" checked />Divorciado
+		</p>
+		<p>
+			<label for="deporte">¿Qu&eacute; deporte desea practicar?</label>
+			<input type="Radio" name="deporte" value="Futbol" checked />F&uacute;tbol
+			<input type="Radio" name="deporte" value="Natacion" checked />Nataci&oacute;n
+			<input type="Radio" name="deporte" value="Baloncesto" checked />Baloncesto
+			<input type="Radio" name="deporte" value="Atletismo" checked />Atletismo
+			<input type="Radio" name="deporte" value="Karate" checked />Karate
+		</p>
+		<p>
+			<input class="submit" type="submit" value="Enviar"/>
+		</p>
+	</form>
+	</body>
+	</head>
+</html>
