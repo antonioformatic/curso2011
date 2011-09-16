@@ -1,0 +1,60 @@
+ 
+#documento{
+	border: 2px solid #593d4f;
+	padding:20px;
+	width: 600px;
+	background-color: #f7f3f6;
+	margin: 0 auto 0 auto;
+}
+
+.subtitulos{
+	color:#471334;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#cabecera{
+	margin: -5px;
+}
+
+form.cmxform {
+	width: 370px;
+	font-size: 1.0em;
+	color: #764c67;
+}
+
+form.cmxform legend {
+	padding-left: 0;
+}
+
+form.cmxform legend, form.cmxform label {
+	color: #764c67;
+}
+
+form.cmxform fieldset {
+	border: 0px;
+	padding: 20px 10px 10px 20px;
+	background-color: #eadee6;
+	
+}
+
+form.cmxform fieldset fieldset {
+	background: none;
+}
+
+form.cmxform fieldset p, form.cmxform fieldset fieldset {
+	padding: 5px 10px 7px;
+	background: url(../images/cmxform-divider.gif) left bottom repeat-x;
+}
+
+form.cmxform label.error, label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: #c84096;
+	font-style: italic;
+	font-size: 10px;
+}
+div.error { display: none; }
+input {	border: 1px solid black; }
+input.checkbox { border: none }
+input:focus { border: 1px dotted black; }
+input.error { border: 1px dotted red; }
+form.cmxform .gray * { color: gray; }
