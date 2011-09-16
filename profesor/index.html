@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="le-frog/jquery.ui.all.css">
+		<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>
+		<style>
+			.ui-autocomplete-loading {
+				background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			$(function() {
+				function log(message) {
+					$("<div/>").text(message).prependTo("#log");
+					$("#log").scrollTop(0);
+				}
+
+
+				$("#birds").autocomplete({
+					source : "search.php",
+					minLength : 2,
+					select : function(event, ui) {
+						log(ui.item ? "Selected: " + ui.item.value + " aka " + ui.item.id : "Nothing selected, input was " + this.value);
+					}
+				});
+			});
+
+		</script>
+		<div class="demo">
+			<div class="ui-widget">
+				<label for="birds">Birds: </label>
+				<input id="birds" />
+			</div>
+			<div class="ui-widget" style="margin-top:2em; font-family:Arial">
+				Result: <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
+			</div>
+		</div><!-- End demo -->
+	</body>
+</html>
