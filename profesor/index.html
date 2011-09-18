@@ -19,12 +19,15 @@
 					$("#log").scrollTop(0);
 				}
 
-
 				$("#birds").autocomplete({
-					source : "search.php",
+					source : "search.php?database=cdcol&table=cds&fieldSearch=titel&fieldRet=id&valueSearch="+"go",
 					minLength : 2,
+					focus : function(event, ui) {
+						$("#id").val(ui.item.id);
+						return false;
+					},
 					select : function(event, ui) {
-						log(ui.item ? "Selected: " + ui.item.value + " aka " + ui.item.id : "Nothing selected, input was " + this.value);
+						log(ui.item ?  ui.item.label: "");
 					}
 				});
 			});
@@ -33,11 +36,13 @@
 		<div class="demo">
 			<div class="ui-widget">
 				<label for="birds">Birds: </label>
+				<input id="id" value = "vacio"/>
 				<input id="birds" />
 			</div>
 			<div class="ui-widget" style="margin-top:2em; font-family:Arial">
 				Result: <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
 			</div>
+			
 		</div><!-- End demo -->
 	</body>
 </html>
