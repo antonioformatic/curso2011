@@ -8,7 +8,7 @@ $database = $_GET['database'];
 $table = $_GET['table'];
 $fieldSearch = $_GET['fieldSearch'];
 $valueSearch = '%';
-$valueSearch.= $_GET['valueSearch'];
+$valueSearch.= $_GET['term'];
 $valueSearch.='%';
 $fieldRet = $_GET['fieldRet'];
 

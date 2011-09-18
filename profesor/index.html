@@ -14,20 +14,12 @@
 	<body>
 		<script>
 			$(function() {
-				function log(message) {
-					$("<div/>").text(message).prependTo("#log");
-					$("#log").scrollTop(0);
-				}
-
-				$("#birds").autocomplete({
-					source : "search.php?database=cdcol&table=cds&fieldSearch=titel&fieldRet=id&valueSearch="+"go",
+				$("#search").autocomplete({
+					source : "search.php?database=cdcol&table=cds&fieldSearch=titel&fieldRet=id",
 					minLength : 2,
 					focus : function(event, ui) {
 						$("#id").val(ui.item.id);
 						return false;
-					},
-					select : function(event, ui) {
-						log(ui.item ?  ui.item.label: "");
 					}
 				});
 			});
@@ -35,12 +27,9 @@
 		</script>
 		<div class="demo">
 			<div class="ui-widget">
-				<label for="birds">Birds: </label>
-				<input id="id" value = "vacio"/>
-				<input id="birds" />
-			</div>
-			<div class="ui-widget" style="margin-top:2em; font-family:Arial">
-				Result: <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
+				<label for="search">Buscar: </label>
+				<input id="id" />
+				<input id="search" />
 			</div>
 			
 		</div><!-- End demo -->
