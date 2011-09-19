@@ -24,7 +24,7 @@ do {
 	array_push(
 		$result, 
 		array(
-			"id"    => $row[$fieldRet], 
+			"ret"    => $row[$fieldRet], 
 			"label" => $row[$fieldSearch]
 		)
 	);

@@ -14,24 +14,23 @@
 	<body>
 		<script>
 			$(function() {
-				$("#search").autocomplete({
-					source : "search.php?database=cdcol&table=cds&fieldSearch=titel&fieldRet=id",
+				$("#actor").autocomplete({
+					source : "search.php?database=sakila&table=actor&fieldSearch=first_name&fieldRet=actor_id",
 					minLength : 2,
 					focus : function(event, ui) {
-						$("#id").val(ui.item.id);
+						$("#actor").val(ui.item.ret);
+						return false;
+					},
+					select: function(event, ui){
+						$("#actor").val(ui.item.ret);
 						return false;
 					}
 				});
 			});
 
 		</script>
-		<div class="demo">
 			<div class="ui-widget">
-				<label for="search">Buscar: </label>
-				<input id="id" />
-				<input id="search" />
+				Actor:<input id="actor" />
 			</div>
-			
-		</div><!-- End demo -->
 	</body>
 </html>
