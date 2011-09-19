@@ -1,2 +1,36 @@
-Haciendo mas cambios
-No aparece en la historia del proyecto.
+Sistema de búsqueda
+1.- Incluir esto:
+		<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>
+		
+2.-Crear un campo de búsqueda, por ejemplo:
+	Actor:<input id="actor" />
+	
+3.-Asignarle la función de autocompletar con el siguiente formato:
+	$("#actor").autocomplete({
+		source : "search.php?database=sakila&table=actor&fieldSearch=first_name&fieldRet=actor_id",
+		minLength : 2,
+		focus : function(event, ui) {
+			$("#actor").val(ui.item.ret);
+			return false;
+		},
+		select: function(event, ui){
+			$("#actor").val(ui.item.ret);
+			return false;
+		}
+	});
+	
+4.- En el campo "source" poner el nombre de la página search.php seguido de una ? y todas las
+variables que necesita para buscar separadas por el signo & por ejemplo:	
+		source : "search.php?
+			database=sakila         //Base de datos a usar
+			&
+			table=actor             //Tabla donde buscar
+			&
+			fieldSearch=first_name  //Campo en el que buscar
+			&
+			fieldRet=actor_id       //Campo a devolver cuando se selecciona alguno
+		",
+
+5.- En los campos "focus" y "select" asignar el valor ui.item.ret al campo utilizado, en este caso
+el campo "actor", es decir $("#actor")
