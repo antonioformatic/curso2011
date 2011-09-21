@@ -62,9 +62,9 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-<link href="../css/twoColFixLtHdr.css" rel="stylesheet" type="text/css" />
-<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="css/twoColFixLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 </head>
  
 <body>
@@ -74,7 +74,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
   <h1>
   <a href="#">
     <img 
-        src="../empresa/camello.jpg" 
+        src="camello.jpg" 
         alt="Insertar logotipo aquí" 
         name="Insert_logo" 
         width="120" 
@@ -85,6 +85,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
     </a>Web básica 2</h1>
     <!-- end .header --></div>
   <div class="sidebar1">
+
 <ul id="MenuBar1" class="MenuBarVertical">
     <li><a href="listarUsuarios.php">Usuarios</a></li>
     <li><a href="listarCriticasProductos.php">Cr&iacute;ticas de productos</a></li>
@@ -126,7 +127,7 @@ Muchas gracias por visitar la web
     <!-- end .footer --></div>
   <!-- end .container --></div>
 <script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 </script>
 </body>
 <!-- InstanceEnd --></html>

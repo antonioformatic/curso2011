@@ -7,9 +7,9 @@
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-<link href="../css/twoColFixLtHdr.css" rel="stylesheet" type="text/css" />
-<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="../profesor/css/twoColFixLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 </head>
  
 <body>
@@ -19,7 +19,7 @@
   <h1>
   <a href="#">
     <img 
-        src="camello.jpg" 
+        src="../profesor/empresa/camello.jpg" 
         alt="Insertar logotipo aquí" 
         name="Insert_logo" 
         width="120" 
