@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_criticasDeUsuarios" value="name:id;datatype:int,name:comentario;datatype:blob,name:nombre;datatype:string,name:descripcion;datatype:blob" />
+</info>
